@@ -143,7 +143,7 @@ class DreamBandHandler(QtCore.QThread):
 
     def tick_time_correct(self, tick):
         ticks_passed = tick - self.initalTick
-        seconds = ticks_passed / 1000000
+        seconds = ticks_passed / 1000
         return(self.initalTime + seconds)
 
     def data_into_buffer(self, data):
